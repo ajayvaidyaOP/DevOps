@@ -139,10 +139,11 @@ User → Application → Shell → Kernel → Hardware
 
 ### 📷 Architecture Diagram
 
-<p align="center">
-  <img src="images/linux-architecture-circle.png" width="400">
-</p>
+### 🔄 Architecture (Circular Diagram)
 
+<p align="center">
+  <img src="images/linux-architecture-circle.png" width="350">
+</p>
 ---
 
 ## ⚔️ Linux vs Windows
