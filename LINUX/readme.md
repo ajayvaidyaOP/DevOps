@@ -68,25 +68,29 @@ Linux architecture is divided into 4 main components:
 ### 🔄 Architecture (Circular View)
 
 <p align="center">
+<svg width="300" height="300" viewBox="0 0 300 300">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>USER</b>  
+  <!-- Outer Circle -->
+  <circle cx="150" cy="150" r="120" stroke="black" stroke-width="2" fill="none"/>
+  <text x="150" y="40" text-anchor="middle" font-size="12">USER</text>
 
-&nbsp;&nbsp;&nbsp;&nbsp;↙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘  
+  <!-- Application -->
+  <circle cx="150" cy="150" r="95" stroke="black" stroke-width="2" fill="none"/>
+  <text x="150" y="80" text-anchor="middle" font-size="12">APPLICATION</text>
 
-<b>APPLICATION</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SHELL</b>  
+  <!-- Shell -->
+  <circle cx="150" cy="150" r="70" stroke="black" stroke-width="2" fill="none"/>
+  <text x="150" y="115" text-anchor="middle" font-size="12">SHELL</text>
 
-&nbsp;&nbsp;&nbsp;&nbsp;↘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↙  
+  <!-- Kernel -->
+  <circle cx="150" cy="150" r="45" stroke="black" stroke-width="2" fill="none"/>
+  <text x="150" y="150" text-anchor="middle" font-size="12">KERNEL</text>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>KERNEL</b>  
+  <!-- Hardware -->
+  <circle cx="150" cy="150" r="20" stroke="black" stroke-width="2" fill="none"/>
+  <text x="150" y="185" text-anchor="middle" font-size="12">HARDWARE</text>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>HARDWARE</b>  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(back to USER)
-
+</svg>
 </p>
 ---
 
