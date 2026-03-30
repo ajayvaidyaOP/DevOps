@@ -1,7 +1,7 @@
 # 🐧 Linux Basics for Beginners
 
 <p align="center">
-  <b>🚀 Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
+<b>🚀 Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
 </p>
 
 <p align="center">
@@ -107,15 +107,6 @@ User → Application → Shell → Kernel → Hardware
 
 > ❗ User cannot directly interact with Kernel  
 
----
-
-### 📷 Architecture Diagram
-
-### 🔄 Architecture (Circular Diagram)
-
-<p align="center">
-  <img src="images/linux-architecture-circle.png" width="350">
-</p>
 ---
 
 ## ⚔️ Linux vs Windows
