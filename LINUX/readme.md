@@ -65,7 +65,6 @@ It is widely used in servers, cloud, and DevOps.
 
 Linux architecture is divided into 4 main components:
 ![Linux Architecture](images/linux-architecture-circle.png)
----
 
 ### 🔹 Components
 
