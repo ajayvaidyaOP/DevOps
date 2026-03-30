@@ -64,33 +64,32 @@ It is widely used in servers, cloud, and DevOps.
 ## 🧠 Linux Architecture
 
 Linux architecture is divided into 4 main components:
-
 ### 🔄 Architecture (Circular View)
 
 <p align="center">
-<svg width="300" height="300" viewBox="0 0 300 300">
+<div style="position: relative; width: 260px; height: 260px; margin: auto;">
 
-  <!-- Outer Circle -->
-  <circle cx="150" cy="150" r="120" stroke="black" stroke-width="2" fill="none"/>
-  <text x="150" y="40" text-anchor="middle" font-size="12">USER</text>
+  <div style="position:absolute; width:260px; height:260px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    USER
+  </div>
 
-  <!-- Application -->
-  <circle cx="150" cy="150" r="95" stroke="black" stroke-width="2" fill="none"/>
-  <text x="150" y="80" text-anchor="middle" font-size="12">APPLICATION</text>
+  <div style="position:absolute; top:20px; left:20px; width:220px; height:220px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    APPLICATION
+  </div>
 
-  <!-- Shell -->
-  <circle cx="150" cy="150" r="70" stroke="black" stroke-width="2" fill="none"/>
-  <text x="150" y="115" text-anchor="middle" font-size="12">SHELL</text>
+  <div style="position:absolute; top:40px; left:40px; width:180px; height:180px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    SHELL
+  </div>
 
-  <!-- Kernel -->
-  <circle cx="150" cy="150" r="45" stroke="black" stroke-width="2" fill="none"/>
-  <text x="150" y="150" text-anchor="middle" font-size="12">KERNEL</text>
+  <div style="position:absolute; top:60px; left:60px; width:140px; height:140px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    KERNEL
+  </div>
 
-  <!-- Hardware -->
-  <circle cx="150" cy="150" r="20" stroke="black" stroke-width="2" fill="none"/>
-  <text x="150" y="185" text-anchor="middle" font-size="12">HARDWARE</text>
+  <div style="position:absolute; top:90px; left:90px; width:80px; height:80px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    HARDWARE
+  </div>
 
-</svg>
+</div>
 </p>
 ---
 
