@@ -1,121 +1,103 @@
-# 🐧 Linux Notes for Beginners 🚀
-
-![Linux](https://img.shields.io/badge/Linux-Notes-blue)
-![Level](https://img.shields.io/badge/Level-Beginner-green)
-![Focus](https://img.shields.io/badge/Focus-DevOps-orange)
-
----
-
-## 📌 Introduction
-
-Linux is an **open-source operating system** that manages hardware and software resources.  
-It acts as an interface between the **user and hardware**.
-
-> ⚠️ Linux is widely used in servers, cloud, and DevOps.
-
----
-
 ## ⚙️ What is Operating System?
 
-An Operating System (OS) is system software that:
-- Manages hardware resources  
-- Manages software applications  
-- Provides interface between user and system  
+### ✅ What
+An Operating System (OS) is system software that manages computer hardware and software resources and acts as an interface between user and hardware.
+
+### ❓ Why OS is needed?
+- To manage hardware (CPU, Memory, Disk)
+- To run applications (Chrome, VS Code, etc.)
+- To provide user interface (CLI/GUI)
+- To handle processes and files
+
+### ⚙️ How OS works?
+1. User gives command (CLI/GUI)
+2. OS receives the request
+3. Kernel processes the request
+4. Hardware executes it
+5. Output is shown to user
 
 ---
 
-## ⚔️ Linux vs Windows
+## 🧠 Linux Architecture (Detailed)
 
-| Feature          | Linux 🐧                     | Windows 🪟                  |
-|-----------------|----------------------------|----------------------------|
-| Interface       | CLI                        | GUI                        |
-| Usability       | Difficult                  | Easy                       |
-| Source Code     | Open Source                | Closed Source              |
-| Licensing       | Free                       | Paid                       |
-| Resource Usage  | Lightweight                | Heavy                      |
-| Security        | More Secure                | Less Secure                |
+Linux architecture is divided into **4 main layers**:
 
----
+### 1️⃣ Hardware
 
-## 🧩 Types of Operating Systems
+#### 📌 Definition:
+Physical components of a computer system.
 
-- **Batch OS** – Executes jobs in batches  
-- **Time-Sharing OS** – Multiple users at same time  
-- **Distributed OS** – Multiple systems work as one  
-- **Embedded OS** – Used in smart devices  
-- **Real-Time OS** – Immediate response systems  
-- **Network OS** – Used for networking  
-- **Mobile OS** – Used in smartphones  
+#### 💡 Examples:
+- CPU (Processor)
+- RAM (Memory)
+- Hard Disk (Storage)
+- Network Devices
+
+#### ❓ Why important?
+Without hardware, OS cannot run.
 
 ---
 
-## 🖧 What is a Server?
+### 2️⃣ Kernel (Heart of Linux)
 
-A server is a system that provides services or resources to other systems (clients) over a network.
+#### 📌 Definition:
+Kernel is the core part of the Linux OS that directly interacts with hardware.
 
-**Examples:**
-- Web Server  
-- File Server  
-- Database Server  
+#### ⚙️ Responsibilities:
+- Process Management  
+- Memory Management  
+- Device Management  
+- File System Management  
 
----
+#### ❓ Why important?
+- Kernel acts as a bridge between software and hardware  
+- Without kernel, system cannot function  
 
-## 🖥️ Desktop OS vs Server OS
-
-| Feature     | Desktop OS                  | Server OS                     |
-|------------|----------------------------|-------------------------------|
-| Purpose    | Personal use               | Network management            |
-| Users      | Single user                | Multiple users                |
-| Performance| UI focused                 | High performance              |
-| Uptime     | Can restart               | 24/7 required                 |
-| Interface  | GUI                        | CLI preferred                 |
-| Security   | Basic                      | Advanced                      |
+#### ⚙️ How it works?
+- Takes request from shell/application  
+- Converts it into low-level instructions  
+- Sends it to hardware  
 
 ---
 
-## 🧠 Linux Architecture
+### 3️⃣ Shell
 
-Linux has 4 main components:
+#### 📌 Definition:
+Shell is a command-line interface that allows users to interact with the kernel.
 
-- **Hardware** – CPU, RAM, Disk  
-- **Kernel** – Core of OS (talks to hardware)  
-- **Shell** – Interface between user & kernel  
-- **Applications** – User programs  
+#### 💡 Examples:
+- bash  
+- sh  
+- zsh  
 
-### 📷 Architecture Diagram
-![Linux Architecture](images/linux-architecture.png)
+#### ❓ Why important?
+- Users cannot directly talk to kernel  
+- Shell makes communication easy  
 
----
-
-## 📦 Linux Distributions
-
-- RedHat  
-- Debian  
-- Ubuntu  
-- Fedora  
-- Amazon Linux  
-- Kali Linux  
-- Linux Mint  
-- SUSE  
+#### ⚙️ How it works?
+- User types command  
+- Shell interprets it  
+- Sends to kernel  
 
 ---
 
-## 💻 Basic Linux Commands
+### 4️⃣ Applications / User Space
 
-```bash
-whoami              # Show current user
-hostname            # Show hostname
-pwd                 # Current directory
-cat /etc/os-release # OS info
-uname -a            # Kernel info
-free -h             # Memory usage
-df -h               # Disk usage
-ls                  # List files
-cd <dir>            # Change directory
-cd ..               # Back
-echo $SHELL         # Current shell
-exit                # Exit terminal
-top                 # Running processes
-lscpu               # CPU info
-lsblk               # Storage devices
-du -sh <file/dir>   # Size of file/folder
+#### 📌 Definition:
+All user-level programs that run on Linux.
+
+#### 💡 Examples:
+- Browser  
+- Text Editor  
+- Games  
+- DevOps tools  
+
+#### ❓ Why important?
+- Users interact with system through applications  
+
+---
+
+## 🔄 Flow of Linux Architecture
+
+```text
+User → Application → Shell → Kernel → Hardware
