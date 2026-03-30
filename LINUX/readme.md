@@ -64,33 +64,7 @@ It is widely used in servers, cloud, and DevOps.
 ## 🧠 Linux Architecture
 
 Linux architecture is divided into 4 main components:
-### 🔄 Architecture (Circular View)
-
-<p align="center">
-<div style="position: relative; width: 260px; height: 260px; margin: auto;">
-
-  <div style="position:absolute; width:260px; height:260px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-    USER
-  </div>
-
-  <div style="position:absolute; top:20px; left:20px; width:220px; height:220px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-    APPLICATION
-  </div>
-
-  <div style="position:absolute; top:40px; left:40px; width:180px; height:180px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-    SHELL
-  </div>
-
-  <div style="position:absolute; top:60px; left:60px; width:140px; height:140px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-    KERNEL
-  </div>
-
-  <div style="position:absolute; top:90px; left:90px; width:80px; height:80px; border:2px solid black; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-    HARDWARE
-  </div>
-
-</div>
-</p>
+![Linux Architecture](images/linux-architecture-circle.png)
 ---
 
 ### 🔹 Components
