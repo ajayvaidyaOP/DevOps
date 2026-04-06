@@ -2,7 +2,6 @@
 
 <b>🚀Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
 </p>
----
 
 ## 📌 Operating System (OS)
 
