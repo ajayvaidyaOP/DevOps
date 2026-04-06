@@ -2,12 +2,6 @@
 
 <b>🚀Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
 </p>
-
-  <img src="https://img.shields.io/badge/Linux-Notes-blue">
-  <img src="https://img.shields.io/badge/Level-Beginner-green">
-  <img src="https://img.shields.io/badge/Focus-DevOps-orange">
-</p>
-
 ---
 
 ## 📌 Operating System (OS)
@@ -151,10 +145,6 @@ User → Application → Shell → Kernel → Hardware
   <img src="https://img.shields.io/badge/Commands-Basics-orange">
 </p>
 
-## linux basic commmand 
-ls - lissting 
-
-
 ```bash
 whoami      # show current user
 pwd         # present working directory
@@ -166,3 +156,4 @@ uname -a    # system info
 top         # running processes
 df -h       # disk usage
 free -h     # memory usage
+
