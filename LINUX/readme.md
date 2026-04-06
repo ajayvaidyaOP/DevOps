@@ -3,7 +3,6 @@
 <b>🚀Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
 </p>
 
-<p align="center">
   <img src="https://img.shields.io/badge/Linux-Notes-blue">
   <img src="https://img.shields.io/badge/Level-Beginner-green">
   <img src="https://img.shields.io/badge/Focus-DevOps-orange">
