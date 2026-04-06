@@ -1,7 +1,6 @@
 # 🐧 Linux Basics for Beginners
 
-<p align="center">
-<b>🚀 Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
+<b>🚀Beginner Friendly | 💻 DevOps Ready | 📚 Easy to Understand</b>
 </p>
 
 <p align="center">
