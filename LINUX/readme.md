@@ -143,7 +143,7 @@ User → Application → Shell → Kernel → Hardware
 <p align="center">
   <img src="https://img.shields.io/badge/Commands-Basics-orange">
 </p>
----
+
 ```bash
 whoami      # show current user
 pwd         # present working directory
