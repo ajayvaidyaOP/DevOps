@@ -151,6 +151,10 @@ User → Application → Shell → Kernel → Hardware
   <img src="https://img.shields.io/badge/Commands-Basics-orange">
 </p>
 
+## linux basic commmand 
+ls - lissting 
+
+
 ```bash
 whoami      # show current user
 pwd         # present working directory
