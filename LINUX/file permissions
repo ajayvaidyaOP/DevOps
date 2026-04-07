@@ -1,0 +1,222 @@
+<h1 align="center">🔐 LINUX FILE PERMISSIONS</h1>
+
+<p align="center">
+📚 Beginner Friendly Notes <br>
+⚡ Permissions decide who can read, write, and execute files in Linux
+</p>
+
+<hr>
+
+<h2>📌 What are File Permissions?</h2>
+
+<p>
+File permissions control <b>who can access a file or directory</b> and <b>what actions they can perform</b>.
+</p>
+
+<ul>
+<li>Who can <b>read</b> the file</li>
+<li>Who can <b>modify</b> the file</li>
+<li>Who can <b>execute</b> the file</li>
+</ul>
+
+<p>
+This helps in <b>protecting data</b> and preventing <b>unauthorized access</b>.
+</p>
+
+<hr>
+
+<h2>❓ WHY FILE PERMISSIONS IMPORTANT?</h2>
+
+<ul>
+<li>🔒 Protect sensitive data</li>
+<li>🚫 Prevent unauthorized access</li>
+<li>✏️ Control modification & deletion</li>
+<li>🛡️ Improve system security</li>
+</ul>
+
+<hr>
+
+<h2>🔍 HOW TO CHECK PERMISSIONS</h2>
+
+<pre>
+ls -l
+</pre>
+
+<p>Example:</p>
+
+<pre>
+-rwxr-xr-- 1 user group 123 May 10 file.txt
+</pre>
+
+<hr>
+
+<h2>🖥️ COMMAND + OUTPUT</h2>
+
+<pre>
+Command: ls -l
+
+Output:
+-rw-r--r-- 1 user group 0 May 10 demo.txt
+</pre>
+
+<hr>
+
+<h2>📊 UNDERSTANDING PERMISSION FORMAT</h2>
+
+<pre>
+-rwxr-xr--
+</pre>
+
+<p><b>Breakdown:</b></p>
+
+<ul>
+<li>File type → -</li>
+<li>Owner → rwx</li>
+<li>Group → r-x</li>
+<li>Others → r--</li>
+</ul>
+
+<p><b>Visual:</b></p>
+
+<pre>
+[ - ][ rwx ][ r-x ][ r-- ]
+ type  owner  group  others
+</pre>
+
+<hr>
+
+<h2>⚡ SHORTCUT TRICK</h2>
+
+<pre>
+rwx = 7
+rw- = 6
+r-x = 5
+r-- = 4
+</pre>
+
+<pre>
+755 = rwx r-x r-x
+644 = rw- r-- r--
+</pre>
+
+<hr>
+
+<h2>📊 PERMISSION TABLE</h2>
+
+<table>
+<tr><th>Symbol</th><th>Meaning</th><th>Value</th></tr>
+<tr><td>r</td><td>Read</td><td>4</td></tr>
+<tr><td>w</td><td>Write</td><td>2</td></tr>
+<tr><td>x</td><td>Execute</td><td>1</td></tr>
+</table>
+
+<hr>
+
+<h2>👤 OWNERSHIP</h2>
+
+<ul>
+<li><b>Owner</b> → creator</li>
+<li><b>Group</b> → group users</li>
+<li><b>Others</b> → remaining users</li>
+</ul>
+
+<hr>
+
+<h2>🔧 CHANGE PERMISSIONS</h2>
+
+<pre>
+chmod 755 file
+</pre>
+
+<p><b>Breakdown:</b></p>
+
+<pre>
+7 → Owner → rwx
+5 → Group → r-x
+5 → Others → r-x
+</pre>
+
+<hr>
+
+<h2>🧮 DEFAULT PERMISSIONS (UMASK)</h2>
+
+<pre>
+Root:
+777 - 022 = 755
+666 - 022 = 644
+
+Normal User:
+777 - 002 = 775
+666 - 002 = 664
+</pre>
+
+<hr>
+
+<h2>🔄 BEFORE VS AFTER</h2>
+
+<pre>
+Before:
+-rw-r--r--
+
+After:
+-rwxr-xr-x
+</pre>
+
+<hr>
+
+<h2>⚠️ COMMON MISTAKES</h2>
+
+<ul>
+<li>❌ Using 777</li>
+<li>❌ Missing execute permission</li>
+<li>❌ Wrong ownership</li>
+</ul>
+
+<hr>
+
+<h2>🔒 SECURITY TIP</h2>
+
+<p>
+Avoid using <b>777</b> in production.<br>
+Follow <b>least privilege principle</b>.
+</p>
+
+<hr>
+
+<h2>🏆 GOLDEN RULES</h2>
+
+<ul>
+<li>✔️ Give only required permissions</li>
+<li>✔️ Avoid full access</li>
+<li>✔️ Keep system secure</li>
+</ul>
+
+<hr>
+
+<h2>🚀 REAL DEVOPS USE CASE</h2>
+
+<ul>
+<li>755 → scripts</li>
+<li>644 → config files</li>
+</ul>
+
+<hr>
+
+<h2>🎤 INTERVIEW QUESTIONS</h2>
+
+<ul>
+<li>What is file permission?</li>
+<li>Difference between 644 and 755?</li>
+<li>What is umask?</li>
+</ul>
+
+<hr>
+
+<h2>💡 QUICK COMMANDS</h2>
+
+<pre>
+ls -l
+chmod 755 file
+chown user file
+chgrp group file
+</pre>
