@@ -1,222 +1,183 @@
-<h1 align="center">🔐 LINUX FILE PERMISSIONS</h1>
+# 🔐 LINUX FILE PERMISSIONS
 
-<p align="center">
-📚 Beginner Friendly Notes <br>
-⚡ Permissions decide who can read, write, and execute files in Linux
-</p>
+![Linux](https://img.shields.io/badge/Linux-Permissions-blue)
+![Level](https://img.shields.io/badge/Level-Beginner-green)
+![DevOps](https://img.shields.io/badge/DevOps-Ready-orange)
 
-<hr>
+> 📚 Beginner Friendly Notes  
+> ⚡ Permissions decide who can read, write, and execute files in Linux
 
-<h2>📌 What are File Permissions?</h2>
+---
 
-<p>
-File permissions control <b>who can access a file or directory</b> and <b>what actions they can perform</b>.
-</p>
+## 📌 WHAT ARE FILE PERMISSIONS
 
-<ul>
-<li>Who can <b>read</b> the file</li>
-<li>Who can <b>modify</b> the file</li>
-<li>Who can <b>execute</b> the file</li>
-</ul>
+File permissions control **who can access a file or directory** and **what actions they can perform**.
 
-<p>
-This helps in <b>protecting data</b> and preventing <b>unauthorized access</b>.
-</p>
+- Who can read the file  
+- Who can modify the file  
+- Who can execute the file  
 
-<hr>
+👉 Helps in protecting data and preventing unauthorized access
 
-<h2>❓ WHY FILE PERMISSIONS IMPORTANT?</h2>
+---
 
-<ul>
-<li>🔒 Protect sensitive data</li>
-<li>🚫 Prevent unauthorized access</li>
-<li>✏️ Control modification & deletion</li>
-<li>🛡️ Improve system security</li>
-</ul>
+## ❓ WHY FILE PERMISSIONS IMPORTANT
 
-<hr>
+- Protect sensitive data  
+- Prevent unauthorized access  
+- Control modification & deletion  
+- Improve system security  
 
-<h2>🔍 HOW TO CHECK PERMISSIONS</h2>
+---
 
-<pre>
-ls -l
-</pre>
+## 🔍 HOW TO CHECK PERMISSIONS
 
-<p>Example:</p>
+Command: `ls -l`  
 
-<pre>
--rwxr-xr-- 1 user group 123 May 10 file.txt
-</pre>
+Example output:  
+`-rwxr-xr-- 1 user group 123 May 10 file.txt`
 
-<hr>
+---
 
-<h2>🖥️ COMMAND + OUTPUT</h2>
+## 🖥️ COMMAND + OUTPUT
 
-<pre>
-Command: ls -l
+Command: `ls -l`  
+Output: `-rw-r--r-- 1 user group 0 May 10 demo.txt`
 
-Output:
--rw-r--r-- 1 user group 0 May 10 demo.txt
-</pre>
+---
 
-<hr>
+## 📊 UNDERSTANDING PERMISSION FORMAT
 
-<h2>📊 UNDERSTANDING PERMISSION FORMAT</h2>
+Example: `-rwxr-xr--`
 
-<pre>
--rwxr-xr--
-</pre>
+- File type → -  
+- Owner → rwx  
+- Group → r-x  
+- Others → r--  
 
-<p><b>Breakdown:</b></p>
+Visual: `[ - ][ rwx ][ r-x ][ r-- ]`
 
-<ul>
-<li>File type → -</li>
-<li>Owner → rwx</li>
-<li>Group → r-x</li>
-<li>Others → r--</li>
-</ul>
+---
 
-<p><b>Visual:</b></p>
+## 📁 FILE TYPES IN LINUX
 
-<pre>
-[ - ][ rwx ][ r-x ][ r-- ]
- type  owner  group  others
-</pre>
+- `-` → Regular file (text, image, program file)  
+- `d` → Directory (folder)  
+- `l` → Link file (shortcut / symbolic link)  
+- `b` → Block device (hard disk, storage devices)  
+- `c` → Character device (keyboard, terminal)  
+- `s` → Socket (communication between processes)  
+- `p` → Pipe (used for process communication)  
 
-<hr>
+👉 Example:
+- `/etc/passwd` → regular file  
+- `/home` → directory  
 
-<h2>⚡ SHORTCUT TRICK</h2>
+---
 
-<pre>
-rwx = 7
-rw- = 6
-r-x = 5
-r-- = 4
-</pre>
+## ⚡ SHORTCUT TRICK
 
-<pre>
-755 = rwx r-x r-x
-644 = rw- r-- r--
-</pre>
+- rwx = 7  
+- rw- = 6  
+- r-x = 5  
+- r-- = 4  
 
-<hr>
+Example:  
+- 755 = rwx r-x r-x  
+- 644 = rw- r-- r--  
 
-<h2>📊 PERMISSION TABLE</h2>
+---
 
-<table>
-<tr><th>Symbol</th><th>Meaning</th><th>Value</th></tr>
-<tr><td>r</td><td>Read</td><td>4</td></tr>
-<tr><td>w</td><td>Write</td><td>2</td></tr>
-<tr><td>x</td><td>Execute</td><td>1</td></tr>
-</table>
+## 📊 PERMISSION TABLE
 
-<hr>
+| Symbol | Meaning | Value |
+|--------|--------|-------|
+| r | Read | 4 |
+| w | Write | 2 |
+| x | Execute | 1 |
 
-<h2>👤 OWNERSHIP</h2>
+---
 
-<ul>
-<li><b>Owner</b> → creator</li>
-<li><b>Group</b> → group users</li>
-<li><b>Others</b> → remaining users</li>
-</ul>
+## 👤 OWNERSHIP
 
-<hr>
+- Owner → creator  
+- Group → group users  
+- Others → remaining users  
 
-<h2>🔧 CHANGE PERMISSIONS</h2>
+---
 
-<pre>
-chmod 755 file
-</pre>
+## 🔧 CHANGE PERMISSIONS
 
-<p><b>Breakdown:</b></p>
+Command: `chmod 755 file`
 
-<pre>
-7 → Owner → rwx
-5 → Group → r-x
-5 → Others → r-x
-</pre>
+Breakdown:  
+- 7 → Owner → rwx  
+- 5 → Group → r-x  
+- 5 → Others → r-x  
 
-<hr>
+---
 
-<h2>🧮 DEFAULT PERMISSIONS (UMASK)</h2>
+## 🔄 BEFORE VS AFTER
 
-<pre>
-Root:
-777 - 022 = 755
-666 - 022 = 644
+Before: `-rw-r--r--`  
+After:  `-rwxr-xr-x`  
 
-Normal User:
-777 - 002 = 775
-666 - 002 = 664
-</pre>
+---
 
-<hr>
+## 🧮 DEFAULT PERMISSIONS (UMASK)
 
-<h2>🔄 BEFORE VS AFTER</h2>
+Root user:  
+- 777 - 022 = 755  
+- 666 - 022 = 644  
 
-<pre>
-Before:
--rw-r--r--
+Normal user:  
+- 777 - 002 = 775  
+- 666 - 002 = 664  
 
-After:
--rwxr-xr-x
-</pre>
+---
 
-<hr>
+## ⚠️ COMMON MISTAKES
 
-<h2>⚠️ COMMON MISTAKES</h2>
+- Using 777  
+- Missing execute permission  
+- Wrong ownership  
 
-<ul>
-<li>❌ Using 777</li>
-<li>❌ Missing execute permission</li>
-<li>❌ Wrong ownership</li>
-</ul>
+---
 
-<hr>
+## 🔒 SECURITY TIP
 
-<h2>🔒 SECURITY TIP</h2>
+Avoid using 777 in production  
+Follow least privilege principle  
 
-<p>
-Avoid using <b>777</b> in production.<br>
-Follow <b>least privilege principle</b>.
-</p>
+---
 
-<hr>
+## 🏆 GOLDEN RULES
 
-<h2>🏆 GOLDEN RULES</h2>
+- Give only required permissions  
+- Avoid full access  
+- Keep system secure  
 
-<ul>
-<li>✔️ Give only required permissions</li>
-<li>✔️ Avoid full access</li>
-<li>✔️ Keep system secure</li>
-</ul>
+---
 
-<hr>
+## 🚀 REAL DEVOPS USE CASE
 
-<h2>🚀 REAL DEVOPS USE CASE</h2>
+- 755 → scripts  
+- 644 → config files  
 
-<ul>
-<li>755 → scripts</li>
-<li>644 → config files</li>
-</ul>
+---
 
-<hr>
+## 🎤 INTERVIEW QUESTIONS
 
-<h2>🎤 INTERVIEW QUESTIONS</h2>
+- What is file permission?  
+- Difference between 644 and 755?  
+- What are file types in Linux?  
+- What is umask?  
 
-<ul>
-<li>What is file permission?</li>
-<li>Difference between 644 and 755?</li>
-<li>What is umask?</li>
-</ul>
+---
 
-<hr>
+## 💡 QUICK COMMANDS
 
-<h2>💡 QUICK COMMANDS</h2>
-
-<pre>
-ls -l
-chmod 755 file
-chown user file
-chgrp group file
-</pre>
+`ls -l`  
+`chmod 755 file`  
+`chown user file`  
+`chgrp group file`    
