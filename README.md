@@ -7,7 +7,9 @@
 </p>
 
 ---
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/53e62192-893b-4d59-a07c-47b6cd31b533" />
 
+---
 # 📌 1. What is DevOps?
 
 ## 🔹 Definition
