@@ -39,13 +39,6 @@ Example output:
 
 ---
 
-## 🖥️ COMMAND + OUTPUT
-
-Command: `ls -l`  
-Output: `-rw-r--r-- 1 user group 0 May 10 demo.txt`
-
----
-
 ## 📊 UNDERSTANDING PERMISSION FORMAT
 
 Example: `-rwxr-xr--`
