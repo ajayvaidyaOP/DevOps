@@ -1,4 +1,4 @@
-<h1 align="center">🚀 DevOps Introduction </h1>
+<h1 align="center">🚀 DevOps </h1>
 
 <p align="center">
 <b>DevOps | IT Workflow | Application Basics</b><br><br>
@@ -12,7 +12,7 @@
 ---
 # 🚀 Introduction to DevOps
 
-## Day-1 📌 Overview
+##  📌 Overview
 
 DevOps is a combination of Development (Dev) and Operations (Ops).
 It focuses on collaboration, automation, and delivering software faster and more reliably.
@@ -190,7 +190,7 @@ Together, they deliver software faster, safer, and more efficiently.
 
 # 🚀 The Strategic Imperative of DevOps
 
-## Day-2 📌 Overview
+##  📌 Overview
 
 This module explains why DevOps has become essential for modern IT, the importance of Linux and AWS, and the growing career opportunities in DevOps.
 
