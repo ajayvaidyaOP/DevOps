@@ -124,7 +124,7 @@ When an IT company builds an application for a client, it follows a structured p
 
 SDLC is a structured process used to develop software in a systematic and controlled manner.
 
-## 🔄 SDLC Flow
+### 🔄 SDLC Flow
 
 Requirement → Design → Development → Testing → Deployment → Maintenance
 
@@ -154,7 +154,7 @@ Requirement → Design → Development → Testing → Deployment → Maintenanc
 
 Waterfall is a traditional development model where each phase is completed before the next begins.
 
-## 🔄 Flow
+### 🔄 Flow
 
 Requirement → Design → Development → Testing → Deployment
 
@@ -186,7 +186,7 @@ Agile is a modern and flexible approach where development happens in iterative c
 
 ---
 
-## 🔄 Flow (Iterative)
+### 🔄 Flow (Iterative)
 
 Plan → Design → Develop → Test → Review → Release → Repeat
 
