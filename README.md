@@ -42,49 +42,191 @@ It focuses on collaboration, automation, and delivering software faster and more
 # 🏢 How IT Company Works
 
 ## 🏢 Typical Department Workflow
-
-An IT company usually has:
-
-### 1️⃣ Business / Sales Team
-
-* Talks to clients
-* Understands requirements
-* Sends proposals & pricing
-
-### 2️⃣ Project Manager / Scrum Master
-
-* Plans project
-* Creates timelines
-* Assigns tasks
-* Ensures delivery
-
-### 3️⃣ Developers
-
-* Write application code
-* Implement new features
-* Fix bugs
-
-### 4️⃣ Testers / QA
-
-* Test application
-* Find bugs
-* Ensure quality before release
-
-### 5️⃣ DevOps / Operations
-
-* Create environments
-* Manage servers
-* Automate deployments
-* Monitor applications
-* Ensure uptime & performance
-
-### 6️⃣ Support Team
-
-* Handles live issues
-* Communicates with customers
+When an IT company builds an application for a client, it follows a structured process that involves **multiple teams, SDLC phases, and development models (Waterfall or Agile)**.
 
 ---
 
+# 🔹 Step 1: Requirement Gathering
+
+### 👨‍💼 Business / Sales Team
+
+* Communicates with clients
+* Understands business requirements
+* Prepares proposals and pricing
+
+👉 **SDLC Phase:** Requirement
+
+---
+
+# 🔹 Step 2: Planning & System Design
+
+### 📊 Project Manager / Scrum Master
+
+* Plans the project
+* Defines timelines and milestones
+* Assigns tasks to teams
+
+👉 System architecture and design are finalized
+
+👉 **SDLC Phase:** Design
+
+---
+
+# 🔹 Step 3: Development
+
+### 👨‍💻 Developers
+
+* Write application code
+* Build features and functionalities
+* Fix bugs during development
+
+👉 **SDLC Phase:** Development
+
+---
+
+# 🔹 Step 4: Testing
+
+### 🧪 Testers / QA
+
+* Test application functionality
+* Identify bugs and issues
+* Ensure quality before release
+
+👉 **SDLC Phase:** Testing
+
+---
+
+# 🔹 Step 5: Deployment
+
+### ⚙️ DevOps / Operations
+
+* Deploy application to production
+* Manage infrastructure and servers
+* Automate deployment using CI/CD pipelines
+
+👉 **SDLC Phase:** Deployment
+
+---
+
+# 🔹 Step 6: Maintenance & Support
+
+### 🛠 Support Team + DevOps
+
+* Monitor applications
+* Fix production issues
+* Release updates and improvements
+
+👉 **SDLC Phase:** Maintenance
+
+---
+
+# 🔰 SDLC (Software Development Life Cycle)
+
+SDLC is a structured process used to develop software in a systematic and controlled manner.
+
+## 🔄 SDLC Flow
+
+Requirement → Design → Development → Testing → Deployment → Maintenance
+
+---
+
+## 📖 SDLC Phases Explained
+
+* **Requirement** → Understanding what to build
+* **Design** → Defining how to build it
+* **Development** → Writing code and implementing features
+* **Testing** → Identifying and fixing defects
+* **Deployment** → Releasing the application to production
+* **Maintenance** → Continuous monitoring, bug fixing, and updates
+
+---
+
+## 🎯 Purpose of SDLC
+
+* Ensures structured development
+* Improves software quality
+* Reduces risks and errors
+* Enables better project control
+
+---
+
+# 💧 Waterfall Model
+
+Waterfall is a traditional development model where each phase is completed before the next begins.
+
+## 🔄 Flow
+
+Requirement → Design → Development → Testing → Deployment
+
+---
+
+## 📖 Key Characteristics
+
+* Sequential (linear) approach
+* Complete planning at the beginning
+* Testing occurs after development
+
+---
+
+## ⚠️ Limitations
+
+* Difficult to accommodate changes
+* Bugs are detected late
+* Client feedback comes at the end
+
+👉 **Simple Understanding:** A one-directional process with limited flexibility
+
+---
+
+# ⚡ Agile Model
+
+Agile is a modern and flexible approach where development happens in iterative cycles called sprints.
+
+👉 Sprint duration: **2–4 weeks**
+
+---
+
+## 🔄 Flow (Iterative)
+
+Plan → Design → Develop → Test → Review → Release → Repeat
+
+---
+
+## 📖 Key Characteristics
+
+* Frequent delivery of working features
+* Continuous client feedback
+* Easy to handle changing requirements
+* Development and testing occur in parallel
+
+---
+
+## ✅ Advantages
+
+* Faster delivery
+* Better quality
+* High adaptability
+
+👉 **Simple Understanding:** Continuous improvement with frequent feedback
+
+---
+
+# 🔁 Final Connection
+
+Client provides requirements →
+Business team gathers and analyzes →
+Project is planned and designed →
+Developers build the application →
+Testers ensure quality →
+DevOps deploys and manages →
+Support team maintains the system
+
+ All of this follows the **SDLC process**
+ SDLC is executed using **Waterfall or Agile models**
+ Agile enables faster and flexible development
+ DevOps ensures fast, automated, and reliable deployment.
+
+---
 # 💻 What is an Application?
 
 ## 📌 Simple Definition
